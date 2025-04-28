@@ -13,6 +13,9 @@
                        required="is_storable and is_dangerous and adr_goods_is_nos_entry"
                        invisible="not adr_goods_is_nos_entry"/>
             </field>
+            <field name="adr_classification_code" position="after">
+                <field name="is_environmentally_hazardous"/>
+            </field>
         </field>
     </record>
 

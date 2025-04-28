@@ -27,6 +27,7 @@ This module adds features for handling ADR Dangerous Goods that are missing from
         'security/ir.model.access.csv',
         # Data
         'data/adr.goods.csv',
+        'data/adr_label.xml',
         # Views
         'views/adr_goods_views.xml',
         'views/product_template_views.xml',

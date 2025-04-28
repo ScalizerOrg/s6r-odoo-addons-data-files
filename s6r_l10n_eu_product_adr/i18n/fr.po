@@ -16,6 +16,12 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: s6r_l10n_eu_product_adr
+#: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr.field_product_product__adr_label_ids
+#: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr.field_product_template__adr_label_ids
+msgid "Adr Label"
+msgstr ""
+
+#. module: s6r_l10n_eu_product_adr
 #: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr.field_adr_nos_supplement__create_uid
 msgid "Created by"
 msgstr "Créé par"
@@ -36,9 +42,21 @@ msgid "Display Name"
 msgstr "Nom d'affichage"
 
 #. module: s6r_l10n_eu_product_adr
+#: model:adr.label,name:s6r_l10n_eu_product_adr.adr_label_environmentally_hazardous
+#: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr.field_product_product__is_environmentally_hazardous
+#: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr.field_product_template__is_environmentally_hazardous
+msgid "Environmentally Hazardous"
+msgstr "Dangereux pour l'environnement"
+
+#. module: s6r_l10n_eu_product_adr
 #: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr.field_adr_nos_supplement__id
 msgid "ID"
 msgstr ""
+
+#. module: s6r_l10n_eu_product_adr
+#: model_terms:ir.ui.view,arch_db:s6r_l10n_eu_product_adr.adr_label_kanban_form
+msgid "Label symbol"
+msgstr "Panneau de l'étiquette"
 
 #. module: s6r_l10n_eu_product_adr
 #: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr.field_adr_nos_supplement__write_uid
@@ -98,7 +116,7 @@ msgid ""
 "The dangerousness of products assigned to this entry will have be "
 "supplemented"
 msgstr ""
-"Des compléments à la dangerosité devront etre ajoutés aux produits assignés "
+"Des compléments à la dangerosité devront être ajoutés aux produits assignés "
 "à cette rubrique"
 
 #. module: s6r_l10n_eu_product_adr
@@ -110,6 +128,6 @@ msgid ""
 " product's variant, so you cannot update these from here. Please reconfigure"
 " each variant separately."
 msgstr ""
-"Des produits dangeureux ou compléments n.s.a. différents sont associé aux "
+"Des produits dangereux ou compléments n.s.a. différents sont associé aux "
 "variantes de ce produit. Vous ne pouvez donc pas le mettre à jour d'ici. "
 "Veuillez reconfigurer chaque variante individuellement."
