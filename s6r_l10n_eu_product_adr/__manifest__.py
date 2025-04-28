@@ -30,6 +30,7 @@ This module adds features for handling ADR Dangerous Goods that are missing from
         # Views
         'views/adr_goods_views.xml',
         'views/product_template_views.xml',
+        'views/adr_label_views.xml',
     ],
     'auto_install': False,
     'installable': True,

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="adr_label_kanban_form" model="ir.ui.view">
+        <field name="model">adr.label</field>
+        <field name="inherit_id" ref="l10n_eu_product_adr.adr_label_kanban_form"/>
+        <field name="arch" type="xml">
+            <t t-name="card" position="replace">
+                <t t-name="card" class="flex-row">
+                    <aside>
+                        <field name="image" widget="image" alt="Label symbol"/>
+                    </aside>
+                    <main class="ps-2">
+                        <field name="code" class="fw-bold fs-5"/>
+                        <field name="name"/>
+                    </main>
+                </t>
+            </t>
+        </field>
+    </record>
+
+</odoo>
