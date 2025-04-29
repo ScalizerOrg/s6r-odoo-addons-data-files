@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+    <record id="adr_label_environmentally_hazardous" model="adr.label">
+        <field name="name">Environmentally Hazardous</field>
+        <field name="code">9</field>
+        <field name="class_id" ref="l10n_eu_product_adr.adr_class_9"/>
+        <field name="image" type="base64" file="s6r_l10n_eu_product_adr/static/img/environmentally_hazardous.svg"/>
+    </record>
+</odoo>

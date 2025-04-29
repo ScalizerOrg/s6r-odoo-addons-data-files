@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_adr_nos_supplement_user,adr.nos.supplement_user,model_adr_nos_supplement,l10n_eu_product_adr.group_adr_goods_user,1,0,0,0
+access_adr_nos_supplement_manager,adr.nos.supplement_manager,model_adr_nos_supplement,l10n_eu_product_adr.group_adr_goods_admin,1,1,1,1
