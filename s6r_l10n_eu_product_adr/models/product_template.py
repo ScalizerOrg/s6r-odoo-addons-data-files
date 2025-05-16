@@ -20,7 +20,7 @@ class ProductTemplate(models.Model):
         """ Override to consider N.O.S. supplements. """
         super()._compute_adr_goods_on_variants()
         for template in self:
-            first_product = template.product_variant_ids[0]
+            first_product = template.product_variant_ids[:1]
             template.adr_goods_on_variants |= not all(
                 product.nos_supplement_ids == first_product.nos_supplement_ids
                 and product.is_environmentally_hazardous == first_product.is_environmentally_hazardous
