@@ -3,7 +3,7 @@
 from odoo import api, fields, models
 from odoo.exceptions import UserError
 
-ADR_FIELDS = ['nos_supplement_ids', 'is_environmentally_hazardous']
+ADR_FIELDS = ['nos_supplement_ids']
 
 
 class ProductTemplate(models.Model):
@@ -11,11 +11,9 @@ class ProductTemplate(models.Model):
 
     nos_supplement_ids = fields.Many2many(related='product_variant_ids.nos_supplement_ids', readonly=False)
     adr_goods_is_nos_entry = fields.Boolean(related='product_variant_ids.adr_goods_is_nos_entry')
-    is_environmentally_hazardous = fields.Boolean(related='product_variant_ids.is_environmentally_hazardous',
-                                                  readonly=False)
     adr_label_ids = fields.Many2many(related="product_variant_ids.adr_label_ids")  # Override
 
-    @api.depends('product_variant_ids.nos_supplement_ids', 'product_variant_ids.is_environmentally_hazardous')
+    @api.depends('product_variant_ids.nos_supplement_ids')
     def _compute_adr_goods_on_variants(self):
         """ Override to consider N.O.S. supplements. """
         super()._compute_adr_goods_on_variants()
@@ -23,7 +21,6 @@ class ProductTemplate(models.Model):
             first_product = template.product_variant_ids[:1]
             template.adr_goods_on_variants |= not all(
                 product.nos_supplement_ids == first_product.nos_supplement_ids
-                and product.is_environmentally_hazardous == first_product.is_environmentally_hazardous
                 for product in template.product_variant_ids[1:]
             )
 

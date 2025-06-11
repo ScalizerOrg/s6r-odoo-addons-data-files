@@ -1,0 +1,55 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* s6r_l10n_eu_product_adr_dangerous_goods
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-11 07:59+0000\n"
+"PO-Revision-Date: 2025-06-11 07:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: s6r_l10n_eu_product_adr_dangerous_goods
+#: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr_dangerous_goods.field_product_product__adr_label_ids
+#: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr_dangerous_goods.field_product_template__adr_label_ids
+msgid "Adr Label"
+msgstr "Étiquettes"
+
+#. module: s6r_l10n_eu_product_adr_dangerous_goods
+#: model:adr.label,name:s6r_l10n_eu_product_adr_dangerous_goods.adr_label_environmentally_hazardous
+msgid "Environmentally Hazardous"
+msgstr "Dangereux pour l'environnement"
+
+#. module: s6r_l10n_eu_product_adr_dangerous_goods
+#: model:ir.model.fields,field_description:s6r_l10n_eu_product_adr_dangerous_goods.field_product_template__envir_hazardous
+msgid "Environmentally hazardous"
+msgstr "Dangereux pour l'environnement"
+
+#. module: s6r_l10n_eu_product_adr_dangerous_goods
+#: model:ir.model,name:s6r_l10n_eu_product_adr_dangerous_goods.model_product_template
+msgid "Product"
+msgstr "Produit"
+
+#. module: s6r_l10n_eu_product_adr_dangerous_goods
+#: model:ir.model,name:s6r_l10n_eu_product_adr_dangerous_goods.model_product_product
+msgid "Product Variant"
+msgstr "Variante de produit"
+
+#. module: s6r_l10n_eu_product_adr_dangerous_goods
+#. odoo-python
+#: code:addons/s6r-data-files/s6r_l10n_eu_product_adr_dangerous_goods/models/product_template.py:0
+#: code:addons/s6r_l10n_eu_product_adr_dangerous_goods/models/product_template.py:0
+msgid ""
+"There are different dangerous goods configured on this product's variant, so"
+" you cannot update these from here. Please reconfigure each variant "
+"separately."
+msgstr ""
+"Des produits dangereux différents sont associé aux variantes de ce produit. "
+"Vous ne pouvez donc pas le mettre à jour d'ici. Veuillez reconfigurer chaque"
+" variante individuellement."

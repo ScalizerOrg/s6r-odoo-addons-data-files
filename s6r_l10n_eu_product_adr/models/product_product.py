@@ -10,18 +10,6 @@ class ProductProduct(models.Model):
                                           'supplement_id', string="N.O.S Supplements",
                                           help="Supplements to the dangerousness")
     adr_goods_is_nos_entry = fields.Boolean(related="adr_goods_id.is_nos_entry")
-    is_environmentally_hazardous = fields.Boolean("Environmentally Hazardous")
-    # Override
-    adr_label_ids = fields.Many2many(related=None, compute='_compute_adr_label_ids')
-
-    @api.depends('adr_goods_id', 'is_environmentally_hazardous')
-    def _compute_adr_label_ids(self):
-        dead_fish_label = self.env.ref('s6r_l10n_eu_product_adr.adr_label_environmentally_hazardous')
-        for product in self:
-            labels = product.adr_goods_id.label_ids
-            if product.is_environmentally_hazardous:
-                labels += dead_fish_label
-            product.adr_label_ids = labels
 
     @api.model_create_multi
     def create(self, vals_list):
