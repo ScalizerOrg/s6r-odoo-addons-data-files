@@ -4,6 +4,7 @@
         <field name="name">Environmentally Hazardous</field>
         <field name="code">9</field>
         <field name="class_id" ref="l10n_eu_product_adr.adr_class_9"/>
-        <field name="image" type="base64" file="s6r_l10n_eu_product_adr/static/img/environmentally_hazardous.svg"/>
+        <field name="image" type="base64"
+               file="s6r_l10n_eu_product_adr_dangerous_goods/static/img/environmentally_hazardous.svg"/>
     </record>
 </odoo>

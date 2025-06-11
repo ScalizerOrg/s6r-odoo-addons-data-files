@@ -2,7 +2,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     'name': 'Scalizer ADR Dangerous Goods',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.0.1',
     'author': 'Scalizer',
     'website': 'https://www.scalizer.fr',
     'summary': "Improved ADR Dangerous Goods handling",
@@ -27,7 +27,6 @@ This module adds features for handling ADR Dangerous Goods that are missing from
         'security/ir.model.access.csv',
         # Data
         'data/adr.goods.csv',
-        'data/adr_label.xml',
         # Views
         'views/adr_goods_views.xml',
         'views/product_template_views.xml',
