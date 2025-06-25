@@ -4,8 +4,7 @@ from odoo import fields, models
 
 
 class PackagingType(models.Model):
-    _name = "packaging.type"
-    _description = "Packaging"
+    _inherit = "packaging.type"
 
     description = fields.Char()
     is_adr_approved = fields.Boolean("ADR Approved")

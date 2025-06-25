@@ -2,7 +2,7 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl.html).
 {
     'name': 'Scalizer Scalizer l10n Eu Product Adr Dangerous Goods',
-    'version': '18.0.1.0.0',
+    'version': '18.0.1.0.1',
     'author': 'Scalizer',
     'website': 'https://www.scalizer.fr',
     'summary': "Improved l10n Eu Product Adr Dangerous Goods",
